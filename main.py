@@ -55,7 +55,7 @@ with open('static/config.json','r') as c:
     params= json.load(c)["params"]
     
 # connection with database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/carbonsavvy'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost:8080/carbonsavvy'
 db = SQLAlchemy(app)
 app.secret_key = 'super-secret-key'
 
@@ -97,7 +97,6 @@ def predictions():
 @app.route('/predict', methods=['POST'])
 def predict():
     # CRIM	ZN	INDUS	CHAS	NOX	RM	AGE	DIS	RAD	TAX	PTRATIO	B	LSTAT	MEDV
-
     data1 = request.form.get('a',type=float)
     data2 = request.form.get('b',type=float)
     data3 = request.form.get('c',type=float)

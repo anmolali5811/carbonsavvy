@@ -6,48 +6,128 @@
         <div class="container-fluid">
           <div class="container">
             
-            <h2 class="text-center my-5">Enter The Values</h2>
+            <h2 class="text-center fw-normal my-5">Enter The Values</h2>
               <form method="POST" action="/predict">
-                  <div class="m-1">
-                    <input name="a" placeholder="Wind Energy Resources" type="text" class="form-control" id="valueA">
+                <div class="wrapper">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="a" max="100" min="-100" step="25" value="0" type="range" id="valueA">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueA">Wind Energy Resources</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="b" placeholder="Fuel based Vehicles On Road" type="text" class="form-control" id="valueB">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="b" max="100" min="-100" step="25" value="0" type="range" id="valueB">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueB">Fuel based Vehicles On Road</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="c" placeholder="Solar Energy Resources" type="text" class="form-control" id="valueC">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="c" max="100" min="-100" step="25" value="0" type="range" id="valueC">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueC">Solar Energy Resources</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="d" placeholder="Garbage in tons" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="d" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueD">Garbage in tons</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="e" placeholder="Electric Vehical on the road" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="e" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueE">Electric Vehical on the road</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="f" placeholder="Number of Industries" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="f" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueF">Number of Industries</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="g" placeholder="Forest Area" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="g" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueG">Forest Area</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="h" placeholder="Population" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="h" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueH">Population</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="i" placeholder="Bio Energy Resources" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="i" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueI">Bio Energy Resources</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="j" placeholder="Recycled Garbage in tons" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="j" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueJ">Recycled Garbage in tons</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="k" placeholder=" Thermal Energy Resources" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="k" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueK">Thermal Energy Resources</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="l" placeholder="Number of Buldings" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="l" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueL">Number of Buldings</label>
+                    </div>
+                    
                   </div>
-                  <div class="m-1">
-                    <input name="m" placeholder="Nuclear Energy Resources" type="text" class="form-control" id="valueD">
+                  <div class="slider">
+                    <div class="slider-input">
+                      <input name="m" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+                    </div>
+                    <div class="slider-label">
+                      <label for="valueM">Nuclear Energy Resources</label>
+                    </div>
+                    
                   </div>
-                  <input value="predict" type="submit" class="d-block my-3 mx-auto btn btn-primary"></input>
+                </div>
+                  <input value="predict" type="submit" class="d-block my-5 mx-auto btn btn-primary"></input>
                 </form>
           </div>
       </div>
