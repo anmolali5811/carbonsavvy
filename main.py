@@ -55,7 +55,7 @@ with open('static/config.json','r') as c:
     params= json.load(c)["params"]
     
 # connection with database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost:8080/carbonsavvy'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/carbonsavvy'
 db = SQLAlchemy(app)
 app.secret_key = 'super-secret-key'
 
@@ -110,7 +110,22 @@ def predict():
     data11 = request.form.get('k',type=float)
     data12 = request.form.get('l',type=float)
     data13 = request.form.get('m',type=float)
-    arr = np.array([[data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13]])
+    mean1 = 3.613524*(1+data1/100);
+    mean2 = 11.363636*(1+data2/100);
+    mean3 = 11.136779*(1+data3/100);
+    mean4 = 0.069170*(1+data4/100);
+    mean5 = 0.554695*(1+data5/100);
+    mean6 = 6.284289*(1+data6/100);
+    mean7 =68.574901*(1+data7/100);
+    mean8 = 3.795043*(1+data8/100);
+    mean9 = 9.549407*(1+data9/100);
+    mean10 = 408.237154*(1+data10/100);
+    mean11 = 18.455534*(1+data11/100);
+    mean12 = 356.674032*(1+data12/100);
+    mean13 = 12.653063*(1+data13/100);
+    arr = np.array([[mean1,mean2,mean3,mean4,mean5,mean6,mean7,mean8,mean9,mean10,mean11,mean12,mean13]])
+
+    print(arr);
     prepared_data = my_pipeline.transform(arr)
     pred = model.predict(prepared_data)
     pred = round(pred[0],3)
