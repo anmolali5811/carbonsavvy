@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="55.017452mm"
+   height="55.017452mm"
+   viewBox="0 0 55.017452 55.017453"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <circle
+     r="27.508726"
+     cy="27.508726"
+     cx="27.508726"
+     id="path966"
+     style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:none;stroke-width:0.28046411;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" />
+  <path
+     id="path824"
+     d="m 27.508721,0.24724021 1.24002,1.24001999 1.781781,24.2768198 -3.021801,1.74465 -3.021806,-1.74464 1.781786,-24.2768298 1.24002,-1.24001999"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458335px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     id="path824-3"
+     d="m 51.117859,41.139476 -1.693898,0.453878 -21.915234,-10.595343 -1.1e-5,-3.48928 3.021806,-1.744641 20.133459,13.681486 0.453878,1.6939"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458335px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     id="path824-6"
+     d="M 3.8995845,41.139475 4.3534638,39.445577 24.486915,25.7641 l 3.021811,1.74463 1e-6,3.489281 L 5.5934833,41.593354 3.8995845,41.139475"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458335px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <circle
+     r="5.512434"
+     cy="27.508726"
+     cx="27.508726"
+     id="path849"
+     style="opacity:1;vector-effect:none;fill:#fffff9;fill-opacity:1;stroke:#000000;stroke-width:0.1984375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" />
+</svg>

@@ -5,7 +5,7 @@ body, html{
   margin: 0;
   width: 100%;
 }
-.wrapper{
+.form-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@ body, html{
 
 .slider{
     width: 80px;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
 }
@@ -57,4 +57,330 @@ body, html{
     background: #0085A1;
     cursor: pointer;
   }
+
+.img-wrapper{
+  position: relative;
+  margin-top: 10px;
+  overflow: hidden;
+  background: url('../assets/background.png') no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 100%;
+  background-position: 50%;
+}
+
+/* Anmiamtions starts */
+
+/* bigHouse */
+#bigHouse{
+  position: absolute;
+  bottom: -53%;
+  left: 20%;
+  width: 250px;
+}
+
+#bigHouse img{
+  object-fit: cover;
+  width: 100%;
+}
+
+/* extra e-pumps */
+#electric-pumps{
+  position: absolute;
+  bottom: 45%;
+  left: 35%;
+  width: 100px;
+}
+
+#electric-pumps img{
+  width: 25px;
+}
+
+/* extra cars */
+#cars1{
+  position: absolute;
+  top: 46%;
+  left: 30%;
+  display: flex;
+  width: 508px;
+  transform: rotate(26deg);
+  justify-content: space-around;
+}
+
+#cars1 img{
+  transform: rotate(-28deg);
+  width: 25px;
+}
+#cars2{
+  position: absolute;
+  top: 68%;
+  left: 18%;
+  display: flex;
+  width: 508px;
+  transform: rotate(26deg);
+  justify-content: space-around;
+}
+
+#cars2 img{
+  transform: rotate(-28deg);
+  width: 25px;
+}
+
+#cars3{
+  position: absolute;
+  top: 73%;
+  left: 18%;
+  display: flex;
+  width: 508px;
+  transform: rotate(26deg);
+  justify-content: space-around;
+}
+
+#cars3 img{
+  transform: rotate(36deg);
+  width: 25px;
+}
+
+/* extra wind machines */
+#wind-machines{
+  position: absolute;
+  top: 7%;
+  left: 20%;
+  width: 300px;
+  display: flex;
+  transform: rotate(-30deg);
+}
+
+
+/* wind machine */
+#a{
+  position: absolute;
+  top: 33%;
+  right: 20%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.wind-machine{
+  position: relative;
+}
+.wind-blades{
+  position: absolute;
+  animation: rotateFan 2s linear infinite;
+  top: 0;
+  left: 0;
+}
+@keyframes rotateFan {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(360deg);
+    }
+ }
+.wind-machine img{
+  width: 20px;
+}
+
+/* forests */
+#g{
+  position: absolute;
+  top: 16%;
+  right: 20%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.forest{
+  position: relative;
+}
+
+.forest img{
+  width: 10px;
+}
+
+/* fuel bases vehicles */
+#b{
+  position: absolute;
+  top: 60%;
+  right: 40%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 3px;
+}
+
+#b img{
+  width: 32px;
+}
+
+/* Garbage */
+#d{
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#d img{
+  width: 35px;
+}
+
+/* factory */
+#f{
+  position: absolute;
+  top: 18%;
+  left: 35%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.factory{
+  position: relative;
+}
+
+.factory img{
+  width: 45px;
+}
+
+/* thermal plant */
+#k{
+  position: absolute;
+  top: 5%;
+  right: 30%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.thermal-plant{
+  position: relative;
+}
+
+.thermal-plant img{
+  width: 45px;
+}
+
+/* biogas-plant */
+#i{
+  position: absolute;
+  top: 25%;
+  right: 30%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.biogas-plant{
+  position: relative;
+}
+
+.biogas-plant img{
+  width: 50px;
+}
+
+/* power-plant-nuclear */
+#m{
+  position: absolute;
+  top: 26%;
+  right: 40%;
+  width: 220px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.power-plant-nuclear{
+  position: relative;
+}
+
+.power-plant-nuclear img{
+  width: 58px;
+}
+
+/* electric vehicles */
+#e{
+  position: absolute;
+  top: 40%;
+  right: 53%;
+  width: 220px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.electric-vehicles{
+  position: relative;
+  z-index: 10;
+}
+
+.electric-vehicles img{
+  width: 25px;
+}
+
+/* building */
+#l{
+  position: absolute;
+  top: 23%;
+  left: 22%;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.building{
+  position: relative;
+}
+
+.building img{
+  width: 35px;
+}
+
+/* populations */
+#h{
+  position: absolute;
+  bottom: 15%;
+  left: 22%;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.populations{
+  position: relative;
+}
+
+.populations img{
+  width: 30px;
+}
+
+/* solar panels */
+#c{
+  position: absolute;
+  bottom: 4%;
+  left: 19%;
+  width: 100px;
+  display: flex;
+  justify-content: end;
+  z-index: 100;
+  flex-wrap: wrap-reverse;
+}
+.panels{
+  position: relative;
+}
+
+.panels img{
+  width: 28px;
+}
+
+
+
+
 

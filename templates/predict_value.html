@@ -1,138 +1,360 @@
 {%extends "template.html" %}
 
 {%block body%}
-       
-        <!-- Main Content-->
-        <div class="container-fluid">
-          <div class="container">
-            
-            <h2 class="text-center fw-normal my-5">Enter The Values</h2>
-              <form method="POST" action="/predict">
-                <div class="wrapper">
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="a" max="100" min="-100" step="25" value="0" type="range" id="valueA">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueA">Wind Energy Resources</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="b" max="100" min="-100" step="25" value="0" type="range" id="valueB">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueB">Fuel based Vehicles On Road</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="c" max="100" min="-100" step="25" value="0" type="range" id="valueC">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueC">Solar Energy Resources</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="d" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueD">Garbage in tons</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="e" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueE">Electric Vehical on the road</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="f" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueF">Number of Industries</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="g" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueG">Forest Area</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="h" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueH">Population</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="i" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueI">Bio Energy Resources</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="j" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueJ">Recycled Garbage in tons</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="k" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueK">Thermal Energy Resources</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="l" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueL">Number of Buldings</label>
-                    </div>
-                    
-                  </div>
-                  <div class="slider">
-                    <div class="slider-input">
-                      <input name="m" max="100" min="-100" step="25" value="0" type="range" id="valueD">
-                    </div>
-                    <div class="slider-label">
-                      <label for="valueM">Nuclear Energy Resources</label>
-                    </div>
-                    
-                  </div>
-                </div>
-                  <input value="predict" type="submit" class="d-block my-5 mx-auto btn btn-primary"></input>
-                </form>
-          </div>
+
+<!-- Main Content-->
+<div class="container-fluid flex-column">
+  <div class="container mx-auto">
+    <div class="img-wrapper">
+      <div id="a">
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
       </div>
+      <div id="b">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/car-old.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/car-old.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+      </div>
+      <div id="c">
+        <div class="panels">
+          <img class="panelImg" src="../static/assets/solar-panel.png" alt="">
+        </div>
+        <div class="panels">
+          <img class="panelImg" src="../static/assets/solar-panel.png" alt="">
+        </div>
+        <div class="panels">
+          <img class="panelImg" src="../static/assets/solar-panel.png" alt="">
+        </div>
+      </div>
+      <div id="d">
+        <img src="../static/assets/garbage.png" alt="">
+        <img src="../static/assets/garbage.png" alt="">
+        <img src="../static/assets/garbage.png" alt="">
+      </div>
+      <div id="e">
+        <div class="electric-vehicles">
+          <img src="../static/assets/car-electric-left.png" alt="">
+          <img src="../static/assets/car-electric-left.png" alt="">
+          <img src="../static/assets/e-pump.png" alt="">
+        </div>
+        <div class="electric-vehicles">
+          <img src="../static/assets/car-electric-left.png" alt="">
+          <img src="../static/assets/e-pump.png" alt="">
+        </div>
+        <div class="electric-vehicles">
+          <img src="../static/assets/car-electric-left.png" alt="">
+          <img src="../static/assets/car-electric-left.png" alt="">
+          <img src="../static/assets/e-pump.png" alt="">
+        </div>
+      </div>
+      <div id="f">
+        <div class="factory">
+          <img class="factortImg" src="../static/assets/factory.png" alt="">
+        </div>
+        <div class="factory">
+          <img class="factortImg" src="../static/assets/factory.png" alt="">
+        </div>
+      </div>
+      <div id="g">
+        <div class="forest">
+          <img class="tree-conifer" src="../static/assets/tree-conifer.png" alt="">
+          <img class="tree-slim" src="../static/assets/tree-slim.png" alt="">
+        </div>
+        <div class="forest">
+          <img class="tree-conifer" src="../static/assets/tree-conifer.png" alt="">
+          <img class="tree-slim" src="../static/assets/tree-slim.png" alt="">
+        </div>
+        <div class="forest">
+          <img class="tree-conifer" src="../static/assets/tree-conifer.png" alt="">
+          <img class="tree-slim" src="../static/assets/tree-slim.png" alt="">
+        </div>
+        <div class="forest">
+          <img class="tree-conifer" src="../static/assets/tree-conifer.png" alt="">
+          <img class="tree-slim" src="../static/assets/tree-slim.png" alt="">
+        </div>
+        <div class="forest">
+          <img class="tree-conifer" src="../static/assets/tree-conifer.png" alt="">
+          <img class="tree-slim" src="../static/assets/tree-slim.png" alt="">
+        </div>
+      </div>
+      <div id="h">
+        <div class="populations">
+          <img class="populationsImg" src="../static/assets/building-residential-1.png" alt="">
+        </div>
+        <div class="populations">
+          <img class="populationsImg" src="../static/assets/building-residential-2.png" alt="">
+        </div>
+        <div class="populations">
+          <img class="populationsImg" src="../static/assets/building-residential-1.png" alt="">
+        </div>
+        <div class="populations">
+          <img class="populationsImg" src="../static/assets/building-residential-2.png" alt="">
+        </div>
+        <div class="populations">
+          <img class="populationsImg" src="../static/assets/building-residential-1.png" alt="">
+        </div>
+      </div>
+      <div id="i">
+        <div class="biogas-plant">
+          <img class="biogas-plantImg" src="../static/assets/biogas-plant.png" alt="">
+        </div>
+        <div class="biogas-plant">
+          <img class="biogas-plantImg" src="../static/assets/biogas-plant.png" alt="">
+        </div>
+      </div>
+      <div id="j"></div>
+      <div id="k">
+        <div class="thermal-plant">
+          <img class="factoryImg" src="../static/assets/factory-2.png" alt="">
+        </div>
+        <div class="thermal-plant">
+          <img class="factoryImg" src="../static/assets/factory-2.png" alt="">
+        </div>
+      </div>
+      <div id="l">
+        <div class="building">
+          <img class="buildingImg" src="../static/assets/building-blue-block.png" alt="">
+        </div>
+        <div class="building">
+          <img class="buildingImg" src="../static/assets/building-orange-tall.png" alt="">
+        </div>
+        <div class="building">
+          <img class="buildingImg" src="../static/assets/building-blue-block.png" alt="">
+        </div>
+      </div>
+      <div id="m">
+        <div class="power-plant-nuclear">
+          <img class="power-plant-nuclearImg" src="../static/assets/power-plant-nuclear-2.png" alt="">
+        </div>
+        <div class="power-plant-nuclear">
+          <img class="power-plant-nuclearImg" src="../static/assets/power-plant-nuclear-3.png" alt="">
+        </div>
+      </div>
+      <div id="bigHouse">
+        <img class="bigHouseImg" src="../static/assets/building-intersected.png" alt="">
+      </div>
+      <div id="electric-pumps">
+        <img src="../static/assets/e-pump.png" alt="">
+      </div>
+      <div id="cars1">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-electric.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/truck-electric.png" alt="">
+      </div>
+      <div id="cars2">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-electric.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/car-electric-right.png" alt="">
+        <img src="../static/assets/truck-green.png" alt="">
+        <img src="../static/assets/truck-electric.png" alt="">
+      </div>
+      <div id="cars3">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-green-left.png" alt="">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-old.png" alt="">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-electric-left.png" alt="">
+        <img src="../static/assets/car-old.png" alt="">
+        <img src="../static/assets/car-green-left.png" alt="">
+      </div>
+      <div id="wind-machines">
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+        <div class="wind-machine">
+          <img class="wind-pole" src="../static/assets/wind-pole.png" alt="">
+          <img class="wind-blades" src="../static/assets/wind-blades.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-center fw-normal mt-2 mb-5">Enter The Values</h2>
+    <form method="POST" action="/predict">
+      <div class="form-wrapper">
+        <div class="slider">
+          <div class="slider-input">
+            <input name="a" onchange="changeInputA()" id="input-a" max="100" min="-100" step="25" value="0" type="range" id="valueA">
+          </div>
+          <div class="slider-label">
+            <label for="valueA">Wind Energy Resources</label>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="b" onchange="changeInputB()" id="input-b" max="100" min="-100" step="25" value="0" type="range" id="valueB">
+          </div>
+          <div class="slider-label">
+            <label for="valueB">Fuel based Vehicles On Road</label>
+          </div>
 
-{%endblock%}        
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="c" onchange="changeInputC()" id="input-c" max="100" min="-100" step="25" value="0" type="range" id="valueC">
+          </div>
+          <div class="slider-label">
+            <label for="valueC">Solar Energy Resources</label>
+          </div>
 
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="d" onchange="changeInputD()" id="input-d" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueD">Garbage in tons</label>
+          </div>
 
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="e" onchange="changeInputE()" id="input-e" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueE">Electric Vehical on the road</label>
+          </div>
 
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="f" onchange="changeInputF()" id="input-f" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueF">Number of Industries</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="g" onchange="changeInputG()" id="input-g" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueG">Forest Area</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="h" onchange="changeInputH()" id="input-h" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueH">Population</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="i" onchange="changeInputI()" id="input-i" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueI">Bio Energy Resources</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="j" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueJ">Recycled Garbage in tons</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="k" onchange="changeInputK()" id="input-k" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueK">Thermal Energy Resources</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="l" onchange="changeInputL()" id="input-l" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueL">Number of Buldings</label>
+          </div>
+
+        </div>
+        <div class="slider">
+          <div class="slider-input">
+            <input name="m" onchange="changeInputM()" id="input-m" max="100" min="-100" step="25" value="0" type="range" id="valueD">
+          </div>
+          <div class="slider-label">
+            <label for="valueM">Nuclear Energy Resources</label>
+          </div>
+
+        </div>
+      </div>
+      <input value="predict" type="submit" class="d-block mx-auto btn btn-primary"></input>
+    </form>
+  </div>
+  <a href="/">
+    <button class="d-block mx-auto btn btn-primary m-2">Back to Home</button>
+  </a>
+</div>
+
+{%endblock%}
