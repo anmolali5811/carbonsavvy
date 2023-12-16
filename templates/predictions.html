@@ -2,82 +2,83 @@
 
 {%block body%}
 
-        <div class="container-fluid px-4 px-lg-5">
-            <div class="row justify-content-center my-5">
-                <div class="col-12">
-                    <h1 class="text-center mb-5">Predictions Details</h1>
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="text-center" scope="col">Wind Energy Resources</th>
-                            <th class="text-center" scope="col">Fuel Based Vehicles</th>
-                            <th class="text-center" scope="col">Solar Energy Resources</th>
-                            <th class="text-center" scope="col">Garbage in tons</th>
-                            <th class="text-center" scope="col">Electric Vehicles</th>
-                            <th class="text-center" scope="col">Industries</th>
-                            <th class="text-center" scope="col">Forest Area</th>
-                            <th class="text-center" scope="col">Population</th>
-                            <th class="text-center" scope="col">BioEnergy Resources</th>
-                            <th class="text-center" scope="col">Recycled Garbage</th>
-                            <th class="text-center" scope="col">Thermal Energy Resources</th>
-                            <th class="text-center" scope="col">Buildings</th>
-                            <th class="text-center" scope="col">Nuclear Energy Resources</th>
-                            <th class="text-center" scope="col">Carbon Emission(Predicted)%</th>
-                            
-                          </tr>
-                        </thead>
-                        <tbody>
-                        {% for prediction in predictions %}
-                          <tr>
-                            <td class="text-center">
-                                {{prediction.wind}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.vehicle}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.solar}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.garbage}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.evehicle}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.industries}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.forest}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.population}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.bio}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.recycle}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.thermal}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.buildings}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.nuclear}}
-                            </td>
-                            <td class="text-center">
-                                {{prediction.co2}}
-                            </td>
-                            
-                          </tr>
-                        {%endfor%}
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid px-3">
+    <h3 class="text-center m-3 fw-bolder fs-2 text-decoration-underline">Predictions Details</h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">Wind Energy Resources</th>
+                    <th class="text-center" scope="col">Fuel Based Vehicles</th>
+                    <th class="text-center" scope="col">Solar Energy Resources</th>
+                    <th class="text-center" scope="col">Garbage in tons</th>
+                    <th class="text-center" scope="col">Electric Vehicles</th>
+                    <th class="text-center" scope="col">Industries</th>
+                    <th class="text-center" scope="col">Forest Area</th>
+                    <th class="text-center" scope="col">Population</th>
+                    <th class="text-center" scope="col">BioEnergy Resources</th>
+                    <th class="text-center" scope="col">Recycled Garbage</th>
+                    <th class="text-center" scope="col">Thermal Energy Resources</th>
+                    <th class="text-center" scope="col">Buildings</th>
+                    <th class="text-center" scope="col">Nuclear Energy Resources</th>
+                    <th class="text-center" scope="col">Carbon Emission(Predicted)%</th>
 
-{%endblock%}        
+                </tr>
+            </thead>
+            <tbody>
+                {% for prediction in predictions %}
+                <tr>
+                    <td class="text-center">
+                        {{prediction.wind}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.vehicle}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.solar}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.garbage}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.evehicle}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.industries}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.forest}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.population}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.bio}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.recycle}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.thermal}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.buildings}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.nuclear}}
+                    </td>
+                    <td class="text-center">
+                        {{prediction.co2}}
+                    </td>
+
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+    <a href="/">
+        <button class="d-block mx-auto btn btn-primary m-5" >Back to Home</button>
+    </a>
+</div>
+
+{%endblock%}
